@@ -1,1 +1,11 @@
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree="$HOME"'
+
+alias lsalias='grep "alias" ~/.aliases'
+alias grep='grep --color=auto'
+alias cat='bat --theme=ansi'
+
+alias timeout="gtimeout" # From coreutils on macos
+alias python="python3"
+
+alias branches="git branch --sort=committerdate"
+alias gitprune="git branch --merged main --no-color|grep -v '^[*] main$'|xargs git branch -d"
